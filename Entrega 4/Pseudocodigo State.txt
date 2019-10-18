@@ -1,0 +1,13 @@
+// El siguiente método está implementado en la clase "EnCurso"
+metodo publico crearAsistencia(bombero: Bombero, fechaIngreso: FechaIngreso): void {
+	definir nuevaAsistencia: Asistencia
+	nuevaAsistencia = nueva Asistencia(fechaIngreso)
+
+	bombero.registrarIngreso(nuevaAsistencia)
+}
+
+
+// En los demás estados no debería crear asistencia, por lo que en ellos se vería así:
+metodo publico crearAsistencia(bombero: Bombero, fechaIngreso: FechaIngreso): void {
+	devolver excepcion "No se puede crear una asistencia para una guardia que no esta en curso"
+}
