@@ -36,7 +36,7 @@ public class GestorIngreso {
 
     private Bombero existeBombero(String dni) {
         ArrayList<Bombero> bomberos = Datos.getInstance().obtenerBomberos();
-        for (Bombero bombero : bomberos) {
+            for (Bombero bombero : bomberos) {
             if (bombero.existeBombero(dni) && bombero.esActivo()) {
                 return bombero;
             }
@@ -61,10 +61,6 @@ public class GestorIngreso {
             }
         }
         return null;
-    }
-
-    public void verificarYCrearAsistencia() {
-
     }
 
     public void finCU() {

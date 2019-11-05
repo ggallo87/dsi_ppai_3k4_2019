@@ -5,12 +5,11 @@ import utn.dsi.entrega5.GuardiaBombero;
 
 import java.util.Date;
 
-public class Detenido implements EstadoGuardiaBombero {
+public class Detenido implements EstadoGuardiaBombero  {
 
     public Detenido() {
 
     }
-
 
     @Override
     public void reprogramar(GuardiaBombero guardiaBombero) {

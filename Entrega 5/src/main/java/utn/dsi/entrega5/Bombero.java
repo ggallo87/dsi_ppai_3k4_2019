@@ -40,6 +40,8 @@ public class Bombero {
     }
 
     public boolean existeAsistenciaSinEgreso() {
+        if (asistencias.isEmpty()) return true;
+
         for (Asistencia asistencia : asistencias) {
             if (asistencia.existeAsistenciaSinEgreso()) {
                 return true;
