@@ -13,7 +13,7 @@ public class ProgramacionGuardia {
         guardiasBombero = new ArrayList<>();
 
         estado = new Estado();
-        estado.setAmbito("utn.dsi.entrega5.ProgramacionGuardia");
+        estado.setAmbito("ProgramacionGuardia");
         estado.setNombre("Vigente");
     }
 

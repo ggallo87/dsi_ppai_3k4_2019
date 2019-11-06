@@ -11,7 +11,7 @@ public class Bombero {
     private String email;
     private Date fechaNacimiento;
     private String telefono;
-    private ArrayList<Asistencia> asistencias;
+    public ArrayList<Asistencia> asistencias; // TODO: cambiar a privado!
 
 
     public Bombero() {

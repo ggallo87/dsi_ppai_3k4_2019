@@ -29,7 +29,7 @@ public class Datos {
 
         ProgramacionGuardia programacionGuardia = agregarProgramacionGuardia(Util.crearFecha(4, 11, 2019), Util.crearFecha(10, 11, 2019), "EnCurso");
 
-        GuardiaBombero guardiaBombero = agregarGuardiaBombero(Util.crearFecha(5, 11, 2019), Util.crearFecha(6, 11, 2019), bombero1, "EnCruso");
+        GuardiaBombero guardiaBombero = agregarGuardiaBombero(Util.crearFechaHora(6, 11, 2019, 0, 0), Util.crearFechaHora(6, 11, 2019, 5, 0), bombero1, "EnCruso");
 
         programacionGuardia.agregarGuardia(guardiaBombero);
 
