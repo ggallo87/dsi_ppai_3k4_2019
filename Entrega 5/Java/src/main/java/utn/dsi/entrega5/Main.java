@@ -1,15 +1,27 @@
 package utn.dsi.entrega5;
 
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
     public static void main(String[] args) {
-        Datos.getInstance().cargarDatos();
-
-        GestorIngreso gestorIngreso = new GestorIngreso();
-
-        gestorIngreso.informeIngreso("24653915", Util.crearFechaHora(6, 11, 2019, 4, 0));
-
-        Asistencia a = Datos.getInstance().obtenerBomberos().get(0).asistencias.get(0);
-        System.out.println("llegada " + a.getFechaHoraLlegada());
-        System.out.println("salida " + a.getFechaHoraSalida());
+        launch(args);
     }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        Parent root = new FXMLLoader(getClass().getResource("/LectorHuellas.fxml")).load();
+
+        Scene escena = new Scene(root);
+
+        primaryStage.setScene(escena);
+        primaryStage.show();
+    }
+
+
 }
